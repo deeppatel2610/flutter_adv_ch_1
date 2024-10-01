@@ -1,16 +1,35 @@
-# flutter_adv_ch_1
+Here's how you can improve your Flutter app's theme setup, along with a sample `README.md` file for your GitHub repository:
 
-A new Flutter project.
+### Code for Dark and Light Theme in Flutter
 
-## Getting Started
+```dart
+MaterialApp(
+  theme: ThemeData.light(),
+  darkTheme: ThemeData.dark(),
+  themeMode: isDark ? ThemeMode.dark : ThemeMode.light, // Use your `isDark` variable here
+  home: MyHomePage(),
+);
+```
 
-This project is a starting point for a Flutter application.
+To switch between dark and light modes dynamically, you can use a `StatefulWidget` and store the value of `isDark` in a `bool` variable (which could be stored in `SharedPreferences` or similar for persistence).
 
-A few resources to get you started if this is your first Flutter project:
+## How to Use
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To toggle between light and dark themes, modify the `isDark` variable and trigger a rebuild.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+setState(() {
+  isDark = !isDark;
+});
+```
+
+## Photo
+  <div>
+    <img src= "https://github.com/user-attachments/assets/5dd94a70-5a60-4a21-b3e3-06400a845590"  height =500px>
+    <img src= "https://github.com/user-attachments/assets/a1227420-5342-41cb-8c4a-b47ee82192d8"  height =500px> 
+
+
+    
+  [Screen_recording_20241001_232244.webm](https://github.com/user-attachments/assets/3ae9105d-f54e-4f0b-adb8-7cc7441aa95a)
+
+  </div>
