@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_adv_ch_1/utils/global.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeProvider extends ChangeNotifier {
@@ -42,7 +41,7 @@ class HomeProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> set(int v1,v2,v3,v4) async {
+  Future<void> set(int v1, v2, v3, v4) async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     await sharedPreferences.setInt('count', v1);
     await sharedPreferences.setInt('totalCount', v2);
@@ -50,8 +49,7 @@ class HomeProvider extends ChangeNotifier {
     await sharedPreferences.setInt('index', v4);
   }
 
-  HomeProvider(int countTemp,indexTemp,malaCountTemp,totalCountTemp)
-  {
+  HomeProvider(int countTemp, indexTemp, malaCountTemp, totalCountTemp) {
     count = countTemp;
     index = indexTemp;
     malaCount = malaCountTemp;

@@ -1,11 +1,10 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_adv_ch_1/provider/home%20provider/home_provider.dart';
 import 'package:provider/provider.dart';
 
+import '../../provider/home provider/home_provider.dart';
 import '../../utils/global.dart';
-import 'component/box_count_method.dart';
 import 'component/row_count_box.dart';
 
 class HomePage extends StatelessWidget {
@@ -237,6 +236,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-
-
