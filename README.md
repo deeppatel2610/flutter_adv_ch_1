@@ -29,3 +29,38 @@ A simple Todo application built using Flutter that allows users to add, remove, 
 1. Add tasks using the input field.
 2. Mark tasks as completed by tapping on them.
 3. Swipe or tap the delete button to remove a task.
+
+Here’s a sample README file for your repository:
+
+---
+
+# 1.3 Registration Page
+
+This project is a simple **Registration Page** built using Flutter. It is part of **Flutter Advanced Challenge 1** aimed at improving the understanding of UI components, form validation, and state management in Flutter applications.
+
+## Features
+
+- Responsive Registration UI
+- Form Validation for User Input Fields
+- Supports Light and Dark Theme
+- Input Fields:
+  - Username
+  - Email
+  - Password
+  - Confirm Password
+- Register Button with Validation
+
+## Screenshots
+
+
+<img src="https://github.com/user-attachments/assets/27bce52b-5195-4f1d-a190-dcc570c690ef" width="300">
+<img src="https://github.com/user-attachments/assets/1c9c20ae-f977-401d-ba7c-cd1a2e93991e" width="300">
+
+
+
+## How to Use
+
+1. Open the app and fill out the registration form.
+2. The form performs validation checks on all input fields (Username, Email, Password, Confirm Password).
+3. Upon successful validation, the user can proceed with registration.
+
