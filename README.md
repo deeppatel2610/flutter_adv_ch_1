@@ -169,3 +169,91 @@ The contact list is managed using `contact_provider.dart`, which implements the 
 2. Add a new contact by tapping the "Add Contact" button.
 3. Fill out the form and submit it to save the contact.
 4. View, edit, or delete contacts from the list as needed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1.8 Count App (Provider-Based) - Flutter Advanced Challenge 1
+
+The **Count App** is a Flutter application built to demonstrate how to manage state using the **Provider** package. It allows users to increment, decrement, and reset a counter while showcasing light and dark theme support.
+
+## Features
+
+- Increment and decrement counter functionality.
+- Reset counter to its initial value.
+- State management using **Provider** for clean and scalable code.
+- Light and dark theme support.
+- Simple and responsive UI design.
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/1a3a9758-7391-410c-bd5d-719939f190c4" width="300">
+<img src="https://github.com/user-attachments/assets/b2103259-13a8-4e7a-a9cf-dc9f738204a0" width="300">
+
+
+## How It Works
+
+- **Provider-based State Management:** The app uses the `Provider` package to manage and update the state of the counter in a clean and efficient way.
+- **Increment/Decrement:** Users can increment or decrement the counter with the respective buttons.
+- **Reset Counter:** The app provides a reset button to set the counter back to zero.
+- **Theme Support:** The app supports both light and dark modes, switching based on the system or user preference.
+
+### State Management with Provider
+
+The `count_provider.dart` file contains the logic to manage the counter state using `ChangeNotifier`. Here's a basic outline of how the state is managed:
+
+1. **Counter State:**
+   - The `CountProvider` class extends `ChangeNotifier` and holds the counter value.
+   - The methods `increment()`, `decrement()`, and `reset()` update the counter value and call `notifyListeners()` to update the UI.
+
+```dart
+class CountProvider with ChangeNotifier {
+  int _count = 0;
+
+  int get count => _count;
+
+  void increment() {
+    _count++;
+    notifyListeners();
+  }
+
+  void decrement() {
+    _count--;
+    notifyListeners();
+  }
+
+  void reset() {
+    _count = 0;
+    notifyListeners();
+  }
+}
+```
+
+2. **UI Updates:**
+   - The UI is wrapped with a `Consumer<CountProvider>`, which listens to changes in the `CountProvider` and rebuilds the widget tree accordingly.
+
+```dart
+Consumer<CountProvider>(
+  builder: (context, countProvider, child) => Text(
+    '${countProvider.count}',
+    style: Theme.of(context).textTheme.headline4,
+  ),
+),
+```
+
+## How to Use
+
+1. Launch the app to see the counter in action.
+2. Tap the "+" button to increment the counter.
+3. Tap the "-" button to decrement the counter.
+4. Press "Reset" to reset the counter to zero.
+5. The app will automatically switch themes based on system preferences or manual settings.
