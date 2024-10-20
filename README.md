@@ -127,3 +127,45 @@ You can customize the colors, fonts, and other visual aspects of both themes by 
 - The cart dynamically updates with the total price and items.
 - Theme switching is available, allowing users to toggle between light and dark modes.
 
+
+
+
+
+# 1.6 Contact App 
+The **Contact App** is a simple yet powerful Flutter application for managing user contacts. It demonstrates the use of Flutter widgets, state management, and form validation techniques to create an intuitive contact management system.
+
+## Features
+
+- Add new contacts with a name, phone number, and email address.
+- View a list of saved contacts.
+- Edit and delete contacts.
+- Responsive UI with light and dark theme support.
+- Form validation for user inputs.
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/f5da9143-f516-4273-8989-0ffa93d5875e" width="300">
+
+## How It Works
+
+- **Add Contacts:** Users can add new contacts by entering a name, phone number, and email. Form validation ensures the fields are properly filled out.
+- **View Contacts:** The app displays a list of all saved contacts.
+- **Edit/Delete Contacts:** Users can edit or delete existing contacts.
+- **Theme Support:** Users can switch between light and dark themes dynamically.
+
+### Contact Data
+
+Contacts are represented using a `ContactModel` class defined in `contact_model.dart`, with the following fields:
+
+- Name
+- Phone Number
+- Email Address
+
+The contact list is managed using `contact_provider.dart`, which implements the `ChangeNotifier` pattern for state management.
+
+## How to Use
+
+1. Launch the app and navigate to the contact list.
+2. Add a new contact by tapping the "Add Contact" button.
+3. Fill out the form and submit it to save the contact.
+4. View, edit, or delete contacts from the list as needed.
