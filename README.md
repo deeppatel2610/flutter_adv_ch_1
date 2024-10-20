@@ -51,12 +51,8 @@ This project is a simple **Registration Page** built using Flutter. It is part o
 - Register Button with Validation
 
 ## Screenshots
-
-
 <img src="https://github.com/user-attachments/assets/27bce52b-5195-4f1d-a190-dcc570c690ef" width="300">
 <img src="https://github.com/user-attachments/assets/1c9c20ae-f977-401d-ba7c-cd1a2e93991e" width="300">
-
-
 
 ## How to Use
 
@@ -64,3 +60,39 @@ This project is a simple **Registration Page** built using Flutter. It is part o
 2. The form performs validation checks on all input fields (Username, Email, Password, Confirm Password).
 3. Upon successful validation, the user can proceed with registration.
 
+
+
+Here’s a README template for the **Theme App** section of your repository:
+
+---
+
+# 1.4 Theme App
+
+This project is a **Theme App** built using Flutter, focusing on implementing both **light** and **dark** themes. It allows users to switch between the two themes dynamically or adapt based on the system settings.
+
+## Features
+
+- Dynamic theme switching between **Light** and **Dark** modes.
+- Responsive UI design that adapts to theme changes.
+- Centralized theme management with easy customization.
+- Utilizes Flutter’s `ThemeData` to configure UI elements.
+
+## Screenshots
+<img src="https://github.com/user-attachments/assets/b608d8f6-8855-4072-a927-6542baf08d58" width="300"> 
+<img src="https://github.com/user-attachments/assets/29d5d014-bda7-4ef7-9fd9-eee9b35981b1" width="300">
+
+## How It Works
+
+- The app uses `ThemeData` to define both **light** and **dark** themes.
+- Users can manually toggle between themes or the app can follow the system-wide theme preference.
+- The theme is managed using the `ChangeNotifier` pattern, providing a clean way to switch themes across the app.
+
+### Customization
+
+You can customize the colors, fonts, and other visual aspects of both themes by editing the `theme_app.dart` file. This file contains `ThemeData` configurations for light and dark themes.
+
+## How to Use
+
+1. The app starts with the system's default theme (light/dark).
+2. Users can switch themes using the app’s UI.
+3. The theme change applies to all screens instantly without restarting the app.
