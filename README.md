@@ -96,3 +96,34 @@ You can customize the colors, fonts, and other visual aspects of both themes by 
 1. The app starts with the system's default theme (light/dark).
 2. Users can switch themes using the app’s UI.
 3. The theme change applies to all screens instantly without restarting the app.
+
+
+
+
+
+# 1.5 Food Express
+
+**Food Express** is a Flutter app designed to provide a clean and intuitive user interface for food delivery. This project demonstrates advanced Flutter UI techniques, state management, and API integration to simulate a food delivery experience.
+
+## Features
+
+- Browse various food items with images, names, and prices.
+- Add food items to the cart.
+- Simple and responsive UI for ordering food.
+- Dynamic cart functionality.
+- Light and dark theme support.
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/8acb83f2-0593-48b6-a55e-721faf857973" width="300">
+<img src="https://github.com/user-attachments/assets/2ebbee78-94a3-4b45-8c4d-0a263c897d88" width="300">
+<img src="https://github.com/user-attachments/assets/18a32e2e-0d69-40d4-bf0d-10e624d8e877" width="300">
+
+
+## How It Works
+
+- Users can browse available food items displayed in a list.
+- Clicking on a food item adds it to the cart.
+- The cart dynamically updates with the total price and items.
+- Theme switching is available, allowing users to toggle between light and dark modes.
+
