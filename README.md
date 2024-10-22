@@ -29,3 +29,231 @@ A simple Todo application built using Flutter that allows users to add, remove, 
 1. Add tasks using the input field.
 2. Mark tasks as completed by tapping on them.
 3. Swipe or tap the delete button to remove a task.
+
+Here’s a sample README file for your repository:
+
+---
+
+# 1.3 Registration Page
+
+This project is a simple **Registration Page** built using Flutter. It is part of **Flutter Advanced Challenge 1** aimed at improving the understanding of UI components, form validation, and state management in Flutter applications.
+
+## Features
+
+- Responsive Registration UI
+- Form Validation for User Input Fields
+- Supports Light and Dark Theme
+- Input Fields:
+  - Username
+  - Email
+  - Password
+  - Confirm Password
+- Register Button with Validation
+
+## Screenshots
+<img src="https://github.com/user-attachments/assets/27bce52b-5195-4f1d-a190-dcc570c690ef" width="300">
+<img src="https://github.com/user-attachments/assets/1c9c20ae-f977-401d-ba7c-cd1a2e93991e" width="300">
+
+## How to Use
+
+1. Open the app and fill out the registration form.
+2. The form performs validation checks on all input fields (Username, Email, Password, Confirm Password).
+3. Upon successful validation, the user can proceed with registration.
+
+
+
+Here’s a README template for the **Theme App** section of your repository:
+
+---
+
+# 1.4 Theme App
+
+This project is a **Theme App** built using Flutter, focusing on implementing both **light** and **dark** themes. It allows users to switch between the two themes dynamically or adapt based on the system settings.
+
+## Features
+
+- Dynamic theme switching between **Light** and **Dark** modes.
+- Responsive UI design that adapts to theme changes.
+- Centralized theme management with easy customization.
+- Utilizes Flutter’s `ThemeData` to configure UI elements.
+
+## Screenshots
+<img src="https://github.com/user-attachments/assets/b608d8f6-8855-4072-a927-6542baf08d58" width="300"> 
+<img src="https://github.com/user-attachments/assets/29d5d014-bda7-4ef7-9fd9-eee9b35981b1" width="300">
+
+## How It Works
+
+- The app uses `ThemeData` to define both **light** and **dark** themes.
+- Users can manually toggle between themes or the app can follow the system-wide theme preference.
+- The theme is managed using the `ChangeNotifier` pattern, providing a clean way to switch themes across the app.
+
+### Customization
+
+You can customize the colors, fonts, and other visual aspects of both themes by editing the `theme_app.dart` file. This file contains `ThemeData` configurations for light and dark themes.
+
+## How to Use
+
+1. The app starts with the system's default theme (light/dark).
+2. Users can switch themes using the app’s UI.
+3. The theme change applies to all screens instantly without restarting the app.
+
+
+
+
+
+# 1.5 Food Express
+
+**Food Express** is a Flutter app designed to provide a clean and intuitive user interface for food delivery. This project demonstrates advanced Flutter UI techniques, state management, and API integration to simulate a food delivery experience.
+
+## Features
+
+- Browse various food items with images, names, and prices.
+- Add food items to the cart.
+- Simple and responsive UI for ordering food.
+- Dynamic cart functionality.
+- Light and dark theme support.
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/8acb83f2-0593-48b6-a55e-721faf857973" width="300">
+<img src="https://github.com/user-attachments/assets/2ebbee78-94a3-4b45-8c4d-0a263c897d88" width="300">
+<img src="https://github.com/user-attachments/assets/18a32e2e-0d69-40d4-bf0d-10e624d8e877" width="300">
+
+
+## How It Works
+
+- Users can browse available food items displayed in a list.
+- Clicking on a food item adds it to the cart.
+- The cart dynamically updates with the total price and items.
+- Theme switching is available, allowing users to toggle between light and dark modes.
+
+
+
+
+
+# 1.6 Contact App 
+The **Contact App** is a simple yet powerful Flutter application for managing user contacts. It demonstrates the use of Flutter widgets, state management, and form validation techniques to create an intuitive contact management system.
+
+## Features
+
+- Add new contacts with a name, phone number, and email address.
+- View a list of saved contacts.
+- Edit and delete contacts.
+- Responsive UI with light and dark theme support.
+- Form validation for user inputs.
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/f5da9143-f516-4273-8989-0ffa93d5875e" width="300">
+
+## How It Works
+
+- **Add Contacts:** Users can add new contacts by entering a name, phone number, and email. Form validation ensures the fields are properly filled out.
+- **View Contacts:** The app displays a list of all saved contacts.
+- **Edit/Delete Contacts:** Users can edit or delete existing contacts.
+- **Theme Support:** Users can switch between light and dark themes dynamically.
+
+### Contact Data
+
+Contacts are represented using a `ContactModel` class defined in `contact_model.dart`, with the following fields:
+
+- Name
+- Phone Number
+- Email Address
+
+The contact list is managed using `contact_provider.dart`, which implements the `ChangeNotifier` pattern for state management.
+
+## How to Use
+
+1. Launch the app and navigate to the contact list.
+2. Add a new contact by tapping the "Add Contact" button.
+3. Fill out the form and submit it to save the contact.
+4. View, edit, or delete contacts from the list as needed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1.8 Count App (Provider-Based) - Flutter Advanced Challenge 1
+
+The **Count App** is a Flutter application built to demonstrate how to manage state using the **Provider** package. It allows users to increment, decrement, and reset a counter while showcasing light and dark theme support.
+
+## Features
+
+- Increment and decrement counter functionality.
+- Reset counter to its initial value.
+- State management using **Provider** for clean and scalable code.
+- Light and dark theme support.
+- Simple and responsive UI design.
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/1a3a9758-7391-410c-bd5d-719939f190c4" width="300">
+<img src="https://github.com/user-attachments/assets/b2103259-13a8-4e7a-a9cf-dc9f738204a0" width="300">
+
+
+## How It Works
+
+- **Provider-based State Management:** The app uses the `Provider` package to manage and update the state of the counter in a clean and efficient way.
+- **Increment/Decrement:** Users can increment or decrement the counter with the respective buttons.
+- **Reset Counter:** The app provides a reset button to set the counter back to zero.
+- **Theme Support:** The app supports both light and dark modes, switching based on the system or user preference.
+
+### State Management with Provider
+
+The `count_provider.dart` file contains the logic to manage the counter state using `ChangeNotifier`. Here's a basic outline of how the state is managed:
+
+1. **Counter State:**
+   - The `CountProvider` class extends `ChangeNotifier` and holds the counter value.
+   - The methods `increment()`, `decrement()`, and `reset()` update the counter value and call `notifyListeners()` to update the UI.
+
+```dart
+class CountProvider with ChangeNotifier {
+  int _count = 0;
+
+  int get count => _count;
+
+  void increment() {
+    _count++;
+    notifyListeners();
+  }
+
+  void decrement() {
+    _count--;
+    notifyListeners();
+  }
+
+  void reset() {
+    _count = 0;
+    notifyListeners();
+  }
+}
+```
+
+2. **UI Updates:**
+   - The UI is wrapped with a `Consumer<CountProvider>`, which listens to changes in the `CountProvider` and rebuilds the widget tree accordingly.
+
+```dart
+Consumer<CountProvider>(
+  builder: (context, countProvider, child) => Text(
+    '${countProvider.count}',
+    style: Theme.of(context).textTheme.headline4,
+  ),
+),
+```
+
+## How to Use
+
+1. Launch the app to see the counter in action.
+2. Tap the "+" button to increment the counter.
+3. Tap the "-" button to decrement the counter.
+4. Press "Reset" to reset the counter to zero.
+5. The app will automatically switch themes based on system preferences or manual settings.
